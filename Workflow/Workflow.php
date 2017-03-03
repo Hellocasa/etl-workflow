@@ -13,19 +13,19 @@ use Symfony\Component\EventDispatcher\GenericEvent;
 class Workflow
 {
     /** @var ExtractorAbstract */
-    private $extractor;
+    protected $extractor;
 
     /** @var TransformerInterface */
-    private $transformer;
+    protected $transformer;
 
     /** @var LoaderInterface */
-    private $loader;
+    protected $loader;
 
     /** @var  ContextInterface */
-    private $context;
+    protected $context;
 
     /** @var EventDispatcherInterface */
-    private $dispatcher;
+    protected $dispatcher;
 
     /**
      * @param EventDispatcherInterface $dispatcher
