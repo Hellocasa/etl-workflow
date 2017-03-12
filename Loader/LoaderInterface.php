@@ -18,11 +18,5 @@ interface LoaderInterface
      * @return mixed
      */
     function flush(ContextInterface $context);
-
-    /**
-     * @param ContextInterface $context
-     * @return mixed
-     */
-    function clear(ContextInterface $context);
 }
 
